@@ -1,0 +1,9 @@
+<div>
+    <button (click)="previousPage()">Anterior pagina</button>
+    <button (click)="nextPage()">Siguiente pagina</button>
+</div>
+
+<div *ngFor="let char of allChars">
+    <p>{{ char.name }}</p>
+    <img src="{{ char.image }}" alt="">
+</div>
